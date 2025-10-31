@@ -3,13 +3,13 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 // Pega aquí la configuración de tu App Web de Firebase
 const firebaseConfig = {
-    apiKey: 'AIzaSyDLsbMOpXVz6_wyA5Q7GRX2Y-kczCeGYmw',
-    authDomain: 'crostic-ling.firebaseapp.com',
-    projectId: 'crostic-ling',
-    storageBucket: 'crostic-ling.firebasestorage.app',
-    messagingSenderId: '505773088777',
-    appId: '1:505773088777:web:d04e1010a8efcece80d8d8',
-    measurementId: 'G-5PZZ6YXXTG',
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
